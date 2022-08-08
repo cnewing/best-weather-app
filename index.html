@@ -18,18 +18,53 @@
     ></script>
     <link rel="stylesheet" href="/assets/styles.css">
   </head>
+
+
   <body>
-       <div class="container-lg">
-      <form class="city-search">
-        <input type="search" placeholder="Search City" />
-      </form>
+      <!-- T O P  H E A D E R  W I T H  G R E E T I N G -->
+      <header>
+          <h1>Welcome to your dashboard, Christa</h1>
+      </header>
 
-      <i class="fas fa-search search-icon"></i>
+      <!-- A P P  C O N T A I N E R -->
 
+       <div class="container">
+
+      <!-- S E A R C H  C I T Y  F O R M -->
+        <div class="form-container">
+          <form action="" id="searchForm">
+            <input type="text" id="citySearch" placeholder="Enter a city"/>
+            <input type="submit" id="submit" value="Search" />
+          </form>
+        </div>
+
+      <!-- <form class="row row-cols-lg-auto g-3 align-items-center" id="searchForm">
+      <div class="col-12">
+      <label class="visually-hidden"></label>
+      <div class="input-group">
+      <input type="text" class="form-control" id="citySearch" placeholder="Enter a city">
+      </div>
+      </div> -->
+  
+      <!-- Q U I C K  S E L E C T  C I T I E S -->
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="qckCity"><button id="quickBtn">Atlanta</button></div>
+          <div class="qckCity"><button id="quickBtn">Los Angeles</button></div>
+          <div class="qckCity"><button id="quickBtn">New York City</button></div>
+          <div class="qckCity"><button id="quickBtn">Dallas</button></div>
+
+        </div>
+      </div>
+
+
+      <!-- W E A T H E R  D A S H B O A R D -->
+<div>
       <div class="current-temp">
-        <h1>New York</h1>
-        <p>Now</p>
-        <h2>73°F</h2>
+        <h1></h1>
+        <p></p>
+        <h2></h2>
         <div class="card-group">
           <div class="card">
             <div class="card-body">
@@ -72,6 +107,7 @@
             </div>
         </div>
       </div>
+    </div>
     </div>
     <script src="/assets/js/script.js"></script>
   </body>

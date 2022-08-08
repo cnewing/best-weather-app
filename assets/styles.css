@@ -1,4 +1,100 @@
-/* .current-temp {
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+/* C O L O R  P A L E T T E */
+.first-color {
+  background: #f0f5f9;
+}
+
+.second-color {
+  background: #c9d6df;
+}
+
+.third-color {
+  background: #52616b;
+}
+
+.fourth-color {
+  background: #1e2022;
+}
+
+/* G R E E T I N G */
+header {
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  padding: 20px 35px;
+  background-color: #1e2022;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+
+/* A P P  C O N T A I N E R */
+.container {
+  display: flexbox;
+}
+
+/* S E A R C H  C I T Y  F O R M */
+#citySearch {
+  background: #fff;
+  color: #1e2022;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  display: inline;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* F O R M  B U T T O N */
+#submit {
+  height: 50px;
+  width: 100px;
+  padding: 0 13px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #52616b;
+  border-radius: 5px;
+  display: inline;
+  cursor: pointer;
+}
+
+/* Q U I C K  S E L E C T  C I T I E S */
+div .row {
+  position: relative;
+  align-items: center;
+}
+#quickBtn {
+  font-size: 18px;
+  border: none;
+  padding: 20px 35px;
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* W E A T H E R  D A S H B O A R D */
+
+.current-temp {
   position: relative;
   text-align: center;
   left: 500px;
@@ -40,4 +136,4 @@
   bottom: 20px;
   right: 500px;
   margin: 15px;
-} */
+}
