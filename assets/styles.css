@@ -1,5 +1,5 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: monospace;
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
@@ -47,93 +47,4 @@ header h1 {
 /* A P P  C O N T A I N E R */
 .container {
   display: flexbox;
-}
-
-/* S E A R C H  C I T Y  F O R M */
-#citySearch {
-  background: #fff;
-  color: #1e2022;
-  width: 500px;
-  height: 50px;
-  font-size: 20px;
-  display: inline;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-/* F O R M  B U T T O N */
-#submit {
-  height: 50px;
-  width: 100px;
-  padding: 0 13px;
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #52616b;
-  border-radius: 5px;
-  display: inline;
-  cursor: pointer;
-}
-
-/* Q U I C K  S E L E C T  C I T I E S */
-div .row {
-  position: relative;
-  align-items: center;
-}
-#quickBtn {
-  font-size: 18px;
-  border: none;
-  padding: 20px 35px;
-  width: 500px;
-  height: 40px;
-  cursor: pointer;
-  text-align: center;
-}
-
-/* W E A T H E R  D A S H B O A R D */
-
-.current-temp {
-  position: relative;
-  text-align: center;
-  left: 500px;
-  top: -150px;
-  font-family: urbanist;
-}
-
-.city-search {
-  position: relative;
-  top: -130px;
-  left: 0px;
-}
-
-.search-icon {
-  position: relative;
-  margin: 0 auto;
-  padding: 0px;
-  top: -155px;
-  left: 170px;
-}
-
-.container-lg {
-  border: 2px solid;
-  color: black;
-  padding: 200px;
-  margin-top: 100px;
-}
-
-.weather-icon {
-  font-size: 40px;
-}
-
-.card {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  top: 250px;
-  bottom: 20px;
-  right: 500px;
-  margin: 15px;
 }
