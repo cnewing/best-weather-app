@@ -21,7 +21,9 @@ Create a sleek design for a weather app that connects to OpenWeather one call AP
 
 <img width="1440" alt="Screen Shot 2022-08-15 at 10 50 10 PM" src="https://user-images.githubusercontent.com/89669465/184787974-b9368391-8fde-424f-b08b-28f927023054.png">
 
+# Live Site
 
+https://weatherxdashboard.netlify.app/
 
 # Contributions
 
