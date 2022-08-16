@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+      crossorigin="ano  nymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
@@ -19,106 +19,50 @@
     <link rel="stylesheet" href="/assets/styles.css" />
   </head>
 
-  <body>
+  <body class="flex-column">
     <!-- T O P  H E A D E R  W I T H  G R E E T I N G -->
     <header>
       <h1>Welcome to your dashboard, Christa</h1>
     </header>
 
-    <!-- A P P  C O N T A I N E R -->
+    <!-- D A S H B O A R D  C O N T A I N E R -->
 
-    <div class="container">
-      <!-- S E A R C H  C I T Y  F O R M -->
-      <div class="form-container">
-        <form action="" id="searchForm">
-          <input type="text" id="citySearch" placeholder="Enter a city" />
-          <input type="submit" id="submit" value="Search" />
-        </form>
-      </div>
-
-      <!-- <form class="row row-cols-lg-auto g-3 align-items-center" id="searchForm">
-      <div class="col-12">
-      <label class="visually-hidden"></label>
-      <div class="input-group">
-      <input type="text" class="form-control" id="citySearch" placeholder="Enter a city">
-      </div>
-      </div> -->
-
-      <!-- Q U I C K  S E L E C T  C I T I E S -->
-
-      <div class="container text-center">
-        <div class="row">
-          <div class="qckCity"><button id="quickBtn">Atlanta</button></div>
-          <div class="qckCity"><button id="quickBtn">Los Angeles</button></div>
-          <div class="qckCity">
-            <button id="quickBtn">New York City</button>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-3 p-2 search-column bg-secondary">
+          <div>
+            <form id="searchCity" class="card-body">
+              <h3 class="card-header">Search for a City</h3>
+              <input
+                id="city-name"
+                type="text"
+                autofocus="true"
+                class="form-input col-12"
+                placeholder="City"
+              />
+              <button type="submit" class="btn btn-info mt-2">Search</button>
+            </form>
           </div>
-          <div class="qckCity"><button id="quickBtn">Dallas</button></div>
+
+          <div id="quick-search-btns"></div>
         </div>
-      </div>
 
-      <!-- <div class="container text-center">
-  <div class="row">
-    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
-    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
-
-   Force next columns to break to new line at md breakpoint and up
-    <div class="w-100 d-none d-md-block"></div>
-
-    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
-    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
-  </div>
-</div> -->
-      <!-- W E A T H E R  D A S H B O A R D -->
-
-      <div class="current-temp">
-        <h1></h1>
-        <p></p>
-        <h2></h2>
-        <div class="card-group">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Monday</h5>
-              <p class="card-text">80°F</p>
-              <br />
-              <i class="fas fa-sun weather-icon"></i>
+        <div class="col-12 col-md-9">
+          <div class="row border current-city" id="current-forecast">
+            <div class="col-12">
+              <h2 id="city" class="text-uppercase"></h2>
+              <div id="current-weather" class="list-group"></div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tuesday</h5>
-              <p class="card-text">75°F</p>
-              <br />
-              <i class="fas fa-cloud-sun-rain weather-icon"></i>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Wednesday</h5>
-              <p class="card-text">78°F</p>
-              <br />
-              <i class="fas fa-cloud weather-icon"></i>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Thursday</h5>
-              <p class="card-text">70°F</p>
-              <br />
-              <i class="fas fa-cloud-showers-heavy weather-icon"></i>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Friday</h5>
-              <p class="card-text">73°F</p>
-              <br />
-              <i class="fas fa-cloud-showers-heavy weather-icon"></i>
-            </div>
+          <div class="row border" id="forecast-5">
+            <h2 class="col-12" id="forecast"></h2>
+            <div class="d-flex flex-wrap" id="day-5"></div>
           </div>
         </div>
       </div>
-    </div>
-    <script src="/assets/js/script.js"></script>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
